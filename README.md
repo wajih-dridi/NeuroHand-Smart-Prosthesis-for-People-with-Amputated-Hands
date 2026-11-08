@@ -243,11 +243,6 @@ Pin assignments can be modified in `include/config.h`.
 
 > **Electrical safety:** ACS712 modules can produce analog outputs approaching 5 V. Appropriate voltage scaling is required before connecting their outputs to ESP32 ADC inputs. Verify the EMG board output range as well. Never connect an unscaled signal exceeding the ESP32's permitted input voltage.
 
-### Hardware Wiring Diagram
-
-<p align="center">
-  <img src="images/wiring_diagram.jpg" width="80%" alt="NeuroHand ESP32 hardware wiring diagram">
-</p>
 
 ## 7. EMG Signal Processing
 
@@ -368,14 +363,6 @@ The mechanical design focuses on:
 - Compact mechanical assembly.
 - Integration of the electronic control system.
 
-### CAD Design and Mechanical Assembly
-
-<p align="center">
-  <img src="images/cad_render_closed.jpg" width="32%" alt="CAD render of closed prosthetic hand">
-  <img src="images/cad_servo_layout.jpg" width="32%" alt="Internal servo arrangement">
-  <img src="images/cad_drawing_sheet.jpg" width="32%" alt="Mechanical CAD drawing">
-</p>
-
 ## 11. Development Stages
 
 The development process is divided into four main stages.
@@ -386,14 +373,6 @@ The development process is divided into four main stages.
 | 2. Servo Protection | Development and testing of servo current monitoring using ACS712 sensors, including stall detection |
 | 3. Mechanical Design | CAD modeling, 3D printing, and assembly of the articulated prosthetic hand |
 | 4. System Integration | Integration of the ESP32 firmware, five servomotors, five current sensors, and EMG-based control |
-
-### Initial EMG Acquisition Prototype
-
-<p align="center">
-  <img src="images/electrode_placement.jpg" width="32%" alt="EMG electrode placement">
-  <img src="images/prototype_arduino_emg_test.jpg" width="32%" alt="Initial Arduino EMG prototype">
-  <img src="images/emg_serial_plotter.jpg" width="32%" alt="Raw EMG signal visualization">
-</p>
 
 ## 12. Repository Structure
 
