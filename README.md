@@ -1,6 +1,5 @@
 # NeuroHand – Smart Prosthesis for People with Hand Amputations
 
-![Tests](https://github.com/wajih-dridi/NeuroHand-Smart-Prosthesis/actions/workflows/tests.yml/badge.svg)
 
 ![MCU](https://img.shields.io/badge/MCU-ESP32-red)
 ![Framework](https://img.shields.io/badge/Framework-Arduino%20%2F%20PlatformIO-orange)
@@ -13,12 +12,6 @@ An **EMG-controlled robotic prosthetic hand** designed to reproduce basic finger
 Surface EMG electrodes capture muscle activity, which is processed by an **ESP32 microcontroller** to generate open/close commands for five servomotors controlling a 3D-printed articulated hand.
 
 Additionally, five **ACS712 current sensors** monitor individual servo currents to detect mechanical obstructions, identify blocked fingers, and provide motor protection.
-
-<p align="center">
-  <img src="images/printed_hand_on_forearm.jpg" width="32%" alt="NeuroHand mounted on forearm socket">
-  <img src="images/printed_hand_open.jpg" width="32%" alt="NeuroHand open position">
-  <img src="images/printed_hand_closed.jpg" width="32%" alt="NeuroHand closed position">
-</p>
 
 > **Important:** NeuroHand is an educational engineering prototype and is not a certified medical device. Read [docs/safety.md](docs/safety.md) before connecting electrodes or operating the hardware.
 
